@@ -1,0 +1,16 @@
+[package]
+name = "renpy_patcher"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1.0.79"
+ctor = "0.2.6"
+frida-gum = { version = "0.13.4", features = ["auto-download", "invocation-listener"] }
+human-panic = "1.2.3"
+lazy_static = "1.4.0"
+pyo3 = { version = "0.20.2", features = ["anyhow"] }
+thiserror = "1.0.56"
